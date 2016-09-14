@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ] # If not root
 fi
 if [ -z ${1+x} ] # Argument control
 then
-  echo -n "Enter domain(e.g. domain.com): ";
+  echo -n "Enter FQDN(e.g. example.com or subdomain.example.com). www will be automatically aliased: ";
   read DOMAIN;
 else
   DOMAIN=$1
@@ -14,24 +14,13 @@ fi
 
 echo "Creating directory...";
 mkdir /var/www/$DOMAIN;
-CONF_FILE="/etc/httpd/conf.d/add_domain.conf"
-echo "Configurating...";
+CONF_FILE="/etc/httpd/conf.d/$DOMAIN.conf"
+
+echo "Configuring...";
+
 if [ -e $CONF_FILE ] # Controlling is conf file exits?
 then
-  cat >>$CONF_FILE <<EOL
-<VirtualHost *:80>
-    ServerName $DOMAIN
-    ServerAlias www.$DOMAIN
-    DocumentRoot /var/www/$DOMAIN
-</VirtualHost>
-EOL
-else
-    cat >>$CONF_FILE <<EOL
-<VirtualHost *:80>
-  DocumentRoot /var/www/html
-</VirtualHost>
-EOL
-cat >>$CONF_FILE <<EOL
+  cat > $CONF_FILE <<EOL
 <VirtualHost *:80>
     ServerName $DOMAIN
     ServerAlias www.$DOMAIN
@@ -39,6 +28,8 @@ cat >>$CONF_FILE <<EOL
 </VirtualHost>
 EOL
 fi
-echo "Apache Service is restarting...";
-systemctl restart httpd.service
-echo "$DOMAIN added to your server.";
+
+echo "Apache Service is reloading..."
+systemctl reload httpd.service
+
+echo "$DOMAIN added to your server."
