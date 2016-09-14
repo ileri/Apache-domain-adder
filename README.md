@@ -1,4 +1,4 @@
-# Apache-domain-adder
+# Apache Domain Adder
 A short way to add a domain to your Apache2 server.
 
 ## **Install**
