@@ -12,7 +12,7 @@ Then make it executable
 chmod 4555 domainadd.sh
 ~~~
 
-Finally copy it to one of the **PATH**'s
+Finally copy it to one of the **PATH** s'
 
 Youc can use:
 ~~~bash
