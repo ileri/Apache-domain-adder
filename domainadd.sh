@@ -29,7 +29,7 @@ fi
 
 if [ -e $CONF_FILE ] # Controlling is conf file exits?
 then
-  echo "There is already a $CONF_FILE has generated."
+  echo "There is already a $CONF_FILE exists."
   echo -n "Do you want to change it? (y/N): "
   read ANSWER
   if [[ ( "$ANSWER" != "y" ) && ( "$ANSWER" != "Y" ) && ( "$ANSWER" != "yes" )
