@@ -14,7 +14,7 @@ fi
 
 echo "Creating directory...";
 mkdir /var/www/$DOMAIN;
-CONF_FILE="/etc/httpd/conf.d/add_site.conf"
+CONF_FILE="/etc/httpd/conf.d/add_domain.conf"
 echo "Configurating...";
 if [ -e $CONF_FILE ] # Controlling is conf file exits?
 then
