@@ -1,9 +1,9 @@
 #!/bin/bash
 if [ "$EUID" -ne 0 ] # If not root
-  then echo "Please run as root!"
-  exit
+  then
+    echo "Please run as root!"
+    exit
 fi
-
 if [ -z ${1+x} ] # Argument control
 then
   echo -n "Enter domain(e.g. domain.com): ";
