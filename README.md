@@ -1,7 +1,7 @@
 # **Apache Domain Adder**
 *A short way to add a domain to your Apache2 server.*
 
-## **Before Install**
+## **Pre Install**
 
 We are assuming that you have been installed Apache.
 If you are not please lookup:
