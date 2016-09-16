@@ -1,7 +1,16 @@
 # **Apache Domain Adder**
 *A short way to add a domain to your Apache2 server.*
 
+## **Before Install**
+
+We are assuming that you have been installed Apache.
+If you are not please lookup:
+ https://www.google.com.tr/search?q=apache2+install
+
+
 ## **Install**
+
+
 Download **domainadd.sh** to your computer. You can use:
 ~~~bash
 wget https://raw.githubusercontent.com/celilileri/Apache-domain-adder/master/domainadd.sh
