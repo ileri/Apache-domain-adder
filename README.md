@@ -7,7 +7,8 @@ We are assuming that you have been installed Apache.
 If you are not please lookup:
  https://www.google.com.tr/search?q=apache2+install
 
-
+Turkish Installation Guide (Türkçe Kurulum Rehberi):
+http://serhatcileri.com/apache-server-domain-ekle-kolay/
 ## **Install**
 
 
