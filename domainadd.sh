@@ -1,15 +1,35 @@
 #!/bin/bash
-if [ "$EUID" -ne 0 ] # If not root
-  then
-    echo "Please run as root!";
-    exit;
+
+clear
+
+set -e
+
+# Check current user status
+if [ "$(id -u)" != 0 ]; then
+  echo "This script must be run as root. 'sudo bash $0'"
+  exit 1
 fi
-if [ -z ${1+x} ] # Argument control
-then
-  echo -n "Enter FQDN(e.g. example.com or subdomain.example.com). www will be automatically aliased: ";
-  read DOMAIN;
-else
-  DOMAIN=$1
+
+# Check Os type
+os_type="$(lsb_release -si 2>/dev/null)"
+if [ "$os_type" != "Ubuntu" ] && [ "$os_type" != "Debian" ]; then
+  echo "Only supports Ubuntu/Debian"
+  exit 1
+fi
+
+if [ ! -f /etc/redhat-release ]; then
+  echo "Only supports Centos"
+  exit 1
+fi
+
+# Check FQDN
+echo "Enter FQDN(e.g. example.com or subdomain.example.com). www will be automatically aliased: "
+read DOMAIN
+
+FQDN_REGEX='^(([a-zA-Z](-?[a-zA-Z0-9])*)\.)*[a-zA-Z](-?[a-zA-Z0-9])+\.[a-zA-Z]{2,}$'
+if ! printf %s "$DOMAIN" | grep -Eq "$FQDN_REGEX"; then
+  echoerr "Invalid parameter. You must enter a FQDN domain name... (e.g. example.com or subdomain.example.com)"
+  exit 1
 fi
 
 echo "Creating directory...";

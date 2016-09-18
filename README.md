@@ -3,6 +3,8 @@
 
 ## **Pre Install**
 
+**Note :** Only works on Debian/Ubuntu and Centos/RHEL
+
 We are assuming that you have been installed Apache.
 If you are not please lookup:
  https://www.google.com.tr/search?q=apache2+install
