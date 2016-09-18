@@ -10,17 +10,6 @@ if [ "$(id -u)" != 0 ]; then
   exit 1
 fi
 
-# Check Os type
-os_type="$(lsb_release -si 2>/dev/null)"
-if [ "$os_type" != "Ubuntu" ] && [ "$os_type" != "Debian" ]; then
-  echo "Only supports Ubuntu/Debian"
-  exit 1
-fi
-
-if [ ! -f /etc/redhat-release ]; then
-  echo "Only supports Centos"
-  exit 1
-fi
 
 # Check FQDN
 echo "Enter FQDN(e.g. example.com or subdomain.example.com). www will be automatically aliased: "
