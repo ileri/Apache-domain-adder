@@ -2,7 +2,7 @@
 *A short way to add a domain to your Apache2 server.*
 
 
-[![GitHub issues](https://img.shields.io/badge/OM%C3%9C-CEng-blue.svg)](http://ce.omu.edu.tr/)
+[![OMÜ CEng](https://img.shields.io/badge/OM%C3%9C-CEng-blue.svg)](http://ce.omu.edu.tr/)
 
 
 [![GitHub issues](https://img.shields.io/github/issues/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/issues)
