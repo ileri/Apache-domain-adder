@@ -1,9 +1,16 @@
 # **Apache Domain Adder**
 *A short way to add a domain to your Apache2 server.*
+
+
+[![GitHub issues](https://img.shields.io/badge/OM%C3%9C-CEng-blue.svg)](http://ce.omu.edu.tr/)
+
+
 [![GitHub issues](https://img.shields.io/github/issues/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/issues)
 [![GitHub forks](https://img.shields.io/github/forks/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/network)
 [![GitHub stars](https://img.shields.io/github/stars/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/celilileri/Apache-domain-adder/master/LICENSE)
+
+
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/celilileri/Apache-domain-adder.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 ## **Pre Install**
 
