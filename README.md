@@ -34,7 +34,7 @@ chmod 4555 domainadd.sh
 
 Finally copy it to one of the **PATH** s'
 
-Youc can use:
+You can use:
 ~~~bash
 sudo cp domainadd.sh /usr/bin/domainadd
 sudo cp domainadd.sh /usr/bin/adddomain
