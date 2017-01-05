@@ -72,3 +72,9 @@ or
 ~~~bash
 sudo domainadd domainname.com
 ~~~
+
+
+
+## License
+
+GPL-3.0
