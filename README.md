@@ -10,8 +10,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/celilileri/Apache-domain-adder/master/LICENSE)
 
-
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/celilileri/Apache-domain-adder.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 ## **Pre Install**
 
 
