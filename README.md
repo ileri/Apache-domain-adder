@@ -5,10 +5,10 @@
 [![OMÜ CEng](https://img.shields.io/badge/OM%C3%9C-CEng-blue.svg)](http://ce.omu.edu.tr/)
 
 
-[![GitHub issues](https://img.shields.io/github/issues/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/issues)
-[![GitHub forks](https://img.shields.io/github/forks/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/network)
-[![GitHub stars](https://img.shields.io/github/stars/celilileri/Apache-domain-adder.svg)](https://github.com/celilileri/Apache-domain-adder/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/celilileri/Apache-domain-adder/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/ileri/Apache-domain-adder.svg)](https://github.com/ileri/Apache-domain-adder/issues)
+[![GitHub forks](https://img.shields.io/github/forks/ileri/Apache-domain-adder.svg)](https://github.com/ileri/Apache-domain-adder/network)
+[![GitHub stars](https://img.shields.io/github/stars/ileri/Apache-domain-adder.svg)](https://github.com/ileri/Apache-domain-adder/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://raw.githubusercontent.com/ileri/Apache-domain-adder/master/LICENSE)
 
 ## **Pre Install**
 
@@ -24,7 +24,7 @@ http://serhatcileri.com/apache-server-domain-ekle-kolay/
 
 Download **domainadd.sh** to your computer. You can use:
 ~~~bash
-wget https://raw.githubusercontent.com/celilileri/Apache-domain-adder/master/domainadd.sh
+wget https://raw.githubusercontent.com/ileri/Apache-domain-adder/master/domainadd.sh
 ~~~
 
 Then make it executable
